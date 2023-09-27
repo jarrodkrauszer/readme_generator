@@ -1,0 +1,14 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarrod Krauszer",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
