@@ -8,15 +8,6 @@ const screenshotPaths = [];
 // const myData = [];
 
 // TODO: Create an array of questions for user input
-const screenshotQuestions = [
-  {
-    type: 'list',
-    message: 'Please select an option:',
-    choices: ['Add a screenshot', 'Move On'],
-    name: 'screenshot'
-  },
-];
-
 const questions = [
   {
     message: 'Please enter the project title:',
