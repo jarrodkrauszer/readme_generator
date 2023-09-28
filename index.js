@@ -3,16 +3,17 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
+const resourceLinks = [];
+const screenshotPaths = [];
+// const myData = [];
+
 // TODO: Create an array of questions for user input
 const screenshotQuestions = [
   {
-    message: 'Please enter path to screenshot:',
-    name: 'screenshot',
-  },
-  {
-    type: 'confirm',
-    message: 'Would you like to add another screenshot?',
-    name: 'confirm',
+    type: 'list',
+    message: 'Please select an option:',
+    choices: ['Add a screenshot', 'Move On'],
+    name: 'screenshot'
   },
 ];
 
@@ -59,12 +60,6 @@ const questions = [
     message: 'Please enter your email address:',
     name: 'email',
   },
-  {
-    type: 'list',
-    message: 'Please select an option:',
-    choices: ['Add a screenshot', 'Move On'],
-    name: 'screenshot'
-  },
 ];
 
 // TODO: Create a function to write README file
@@ -76,33 +71,67 @@ function writeToFile(fileName, data) {
   });
 }
 
-function addScreenshot() {
+function addScreenshotLink() {
   inquirer
-  .prompt(screenshotQuestions)
-  .then((response) =>{
-    console.log(response);
-  });
+  .prompt({
+    name: 'link',
+    message: 'Please enter the path to your screenshot file.'
+  }).then(response => {
+    screenshotPaths.push(response.link);
+    showScreenshotMenu();
+  })
 }
 
-function startQuestions() {
+function showScreenshotMenu() {
   inquirer
-  .prompt(questions)
-  .then((response) =>{
-    console.log(response);
-    if(response.screenshot === 'Add a screenshot') {
-      addScreenshot();
-    }
+  .prompt({
+    name: 'choice',
+    type: 'list',
+    choices: ['Add a screenshot', 'Move on'],
+    message: 'Please select an option'
   }).then(response => {
-    return response;
-  });
+    if (response.choice === 'Add a screenshot') {
+      return addScreenshotLink();
+    }
+  })
+}
+
+function addResourceLink() {
+  inquirer
+  .prompt({
+    name: 'link',
+    message: 'Please type your resource link.'
+  }).then(response => {
+    resourceLinks.push(response.link);
+    showResourceMenu();
+  })
+}
+
+function showResourceMenu() {
+  inquirer
+  .prompt({
+    name: 'choice',
+    type: 'list',
+    choices: ['Add a resource', 'Move on'],
+    message: 'Please select an option'
+  }).then(response => {
+    if (response.choice === 'Add a resource') {
+      return addResourceLink();
+    }
+    
+    showScreenshotMenu();
+  })
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  startQuestions();
-  console.log('Done!');
-  // writeToFile('./README.md', generateMarkdown(response));
+  inquirer
+  .prompt(questions)
+  .then((response) =>{
+    showResourceMenu();
+  });
 
+  writeToFile('./README.md', generateMarkdown(response));
 }
 
 // Function call to initialize app
