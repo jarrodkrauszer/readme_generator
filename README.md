@@ -1,8 +1,8 @@
-# README     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README File     ![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
   
   ## Description
   
-  description
+  Description
 
   ## Table of Contents
 
@@ -14,29 +14,28 @@
 
   ## Installation
 
-  none
+  npm
 
   ## Usage
 
-  npm
-  
-  ![](assets/images/)
+  all sorts
+
+  ![screenshot.png](assets/images/screenshot.png)
 
   ## License
   
-  This app is covered by the [MIT License](https://opensource.org/licenses/MIT)
+  This app is covered by the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
 
-  none
+  some guidelines
  
-  
   ## Tests
 
-  help me
+  test away
 
   ## Questions
 
-  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
+  Link to my github profile: [](https://github.com/)
   
-  If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
+  If you have any further questions you can email me at: []()

@@ -135,7 +135,6 @@ function generateMarkdown(data) {
 
   ${data.guidelines}
  
-  
   ## Tests
 
   ${data.tests}
