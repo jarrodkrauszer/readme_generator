@@ -4,26 +4,30 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
+const screenshotQuestions = [
+  {
+    message: 'Please enter path to screenshot:',
+    name: 'screenshot',
+  },
+  {
+    type: 'confirm',
+    message: 'Would you like to add another screenshot?',
+    name: 'confirm',
+  },
+];
+
 const questions = [
   {
-    type: 'input',
     message: 'Please enter the project title:',
     name: 'title',
   },
   {
-    type: 'input',
     message: 'Please enter a description:',
     name: 'description',
   },
   {
-    type: 'input',
     message: 'Please enter installation instructions:',
     name: 'instructions',
-  },
-  {
-    type: 'input',
-    message: 'Please enter usage information:',
-    name: 'usage',
   },
   {
     type: 'input',
@@ -55,11 +59,16 @@ const questions = [
     message: 'Please enter your email address:',
     name: 'email',
   },
+  {
+    type: 'list',
+    message: 'Please select an option:',
+    choices: ['Add a screenshot', 'Move On'],
+    name: 'screenshot'
+  },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  // console.log(fileName, data);
   fs.writeFile(fileName, data, (err) => {
     if(err) throw err;
   
@@ -67,13 +76,33 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
-function init() {
+function addScreenshot() {
+  inquirer
+  .prompt(screenshotQuestions)
+  .then((response) =>{
+    console.log(response);
+  });
+}
+
+function startQuestions() {
   inquirer
   .prompt(questions)
   .then((response) =>{
-    writeToFile('./README.md', generateMarkdown(response));
+    console.log(response);
+    if(response.screenshot === 'Add a screenshot') {
+      addScreenshot();
+    }
+  }).then(response => {
+    return response;
   });
+}
+
+// TODO: Create a function to initialize app
+function init() {
+  startQuestions();
+  console.log('Done!');
+  // writeToFile('./README.md', generateMarkdown(response));
+
 }
 
 // Function call to initialize app
