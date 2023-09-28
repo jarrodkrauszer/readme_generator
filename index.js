@@ -129,9 +129,10 @@ function init() {
   .prompt(questions)
   .then((response) =>{
     showResourceMenu();
+    console.log('Initial: ' + response);
+    // writeToFile('./README.md', generateMarkdown(response));
   });
 
-  writeToFile('./README.md', generateMarkdown(response));
 }
 
 // Function call to initialize app
