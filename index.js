@@ -39,7 +39,11 @@ const questions = [
     type: 'list',
     message: 'Please choose the appropriate license:',
     name: 'license',
-    choices: ['license 1', 'license 2', 'license 3', 'license 4', 'license 5']
+    choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License',
+     'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New or "Revised" License',
+     'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0',
+     'GUN Affero General Public License v3.0', 'GUN Lesser General Public License v2.1',
+     'Mozilla Public License 2.0', 'The Unlicense']
   },
   {
     type: 'input',
@@ -55,7 +59,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  console.log(fileName, data);
+  // console.log(fileName, data);
   fs.writeFile(fileName, data, (err) => {
     if(err) throw err;
   
@@ -69,9 +73,7 @@ function init() {
   .prompt(questions)
   .then((response) =>{
     writeToFile('./README.md', generateMarkdown(response));
-  }
-    
-  );
+  });
 }
 
 // Function call to initialize app
