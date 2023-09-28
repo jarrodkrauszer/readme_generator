@@ -1,8 +1,8 @@
-# README Generator     ![License: BSD 3-Clause "New or "Revised" License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
+# README     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Description
   
-  thia app will generate a readme file
+  description
 
   ## Table of Contents
 
@@ -14,27 +14,29 @@
 
   ## Installation
 
-  npm
+  none
 
   ## Usage
 
-  how is this used
+  npm
+  
+  ![](assets/images/)
 
   ## License
   
-  [BSD 3-Clause "New or "Revised" License](https://opensource.org/licenses/BSD-3-Clause)
+  This app is covered by the [MIT License](https://opensource.org/licenses/MIT)
 
   ## Contributing
 
-  what happen
+  none
  
   
   ## Tests
 
-  no way
+  help me
 
   ## Questions
 
-  Link to deployed code: [jarrodkrauszer](https://github.com/jarrodkrauszer)
+  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
   
   If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)

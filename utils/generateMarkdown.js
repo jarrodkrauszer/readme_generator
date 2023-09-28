@@ -125,6 +125,8 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
+  ![${data.screenshot}](assets/images/${data.screenshot})
+
   ## License
   
   This app is covered by the ${renderLicenseSection(data.license)}

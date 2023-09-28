@@ -27,6 +27,11 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'Please enter the name of the screenshot file in the ./assets/images folder:',
+    name: 'screenshot',
+  },
+  {
+    type: 'input',
     message: 'Please enter contribution guidelines:',
     name: 'guidelines',
   },
