@@ -1,43 +1,27 @@
 # README Generator     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
-  ## Description
+## Description
   
-  This app does something
+This nodejs app uses inquirer to prompt the end user a list of questions.  It uses the answers provided by the end user to dynamically generate a README file in the ./assets folder.
 
-  ## Table of Contents
+## Installation
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution Guidelines](#contributing)
-  - [Test](#tests)
-  - [Questions](#questions)
+npm i inquirer@8.4.2
 
-  ## Installation
+## Usage
 
-  install inquirer
+![screenshot.png](assets/images/screenshot.png)
 
-  ## Usage
-
+## License
   
+Distributed under the [MIT License](https://opensource.org/licenses/MIT)
 
-  ![screenshot.png](assets/images/screenshot.png)
+ ## Questions
 
-  ## License
+Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
+
+Here is a link to the project: [README_Generator](https://github.com/jarrodkrauszer/readme_generator)
   
-  Distributed under the [MIT License](https://opensource.org/licenses/MIT)
+If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
 
-  ## Contributing
-
-  none
- 
-  ## Tests
-
-  test away
-
-  ## Questions
-
-  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
-
-  Here is a link to the project: [README_Generator](https://github.com/jarrodkrauszer/readme_generator)
-  
-  If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
+Here is a link to the demo video: [README_Generator](https://youtu.be/UZi-xTPb4hY)
