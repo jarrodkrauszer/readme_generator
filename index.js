@@ -12,7 +12,7 @@ let answers = {
   instructions: '',
   guidelines: '',
   tests: '',
-  licesne: '',
+  license: '',
   github: '',
   email: ''
   screenshots: [],
