@@ -14,7 +14,7 @@ let answers = {
   tests: '',
   license: '',
   github: '',
-  email: ''
+  email: '',
   screenshots: [],
   resourceLinks: []
 }
@@ -97,6 +97,8 @@ function showScreenshotMenu() {
     if (response.choice === 'Add a screenshot') {
       return addScreenshotLink();
     }
+
+    writeToFile('./README.md', generateMarkdown(answers));
   })
 }
 
@@ -143,7 +145,6 @@ function init() {
     
     showResourceMenu();
     console.log('Initial: ' + response);
-    // writeToFile('./README.md', generateMarkdown(response));
   });
 
 }

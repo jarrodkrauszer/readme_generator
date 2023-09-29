@@ -1,8 +1,8 @@
-# README File     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README Generator     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Description
   
-  Description
+  This app does something
 
   ## Table of Contents
 
@@ -14,11 +14,13 @@
 
   ## Installation
 
-  none
+  npm
 
   ## Usage
 
-  
+  undefined
+
+  ![undefined](assets/images/undefined)
 
   ## License
   
@@ -26,15 +28,15 @@
 
   ## Contributing
 
-  me
+  none
  
   
   ## Tests
 
-  test
+  test away
 
   ## Questions
 
-  Link to my github profile: [adsf](https://github.com/adsf)
+  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
   
-  If you have any further questions you can email me at: [lkjadfj](lkjadfj)
+  If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
