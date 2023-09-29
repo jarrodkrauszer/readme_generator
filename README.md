@@ -1,8 +1,8 @@
-# README Generator     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README Generator     ![License: GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)
   
 ## Description
   
-This app does something
+Description
 
 ## Table of Contents
 
@@ -14,18 +14,19 @@ This app does something
 
 ## Installation
 
-npm
+npm inquirer
 
 ## Usage
 [www.google.com](www.google.com)
 [www.espn.com](www.espn.com)
+[www.yahoo.com](www.yahoo.com)
 
 
 
 
 ## License
   
-This app is covered by the [MIT License](https://opensource.org/licenses/MIT)
+This app is covered by the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Contributing
 
