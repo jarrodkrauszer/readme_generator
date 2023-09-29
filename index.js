@@ -144,7 +144,6 @@ function init() {
     answers.email = response.email;
     
     showResourceMenu();
-    console.log('Initial: ' + response);
   });
 
 }
