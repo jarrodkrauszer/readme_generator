@@ -132,6 +132,15 @@ function init() {
   inquirer
   .prompt(questions)
   .then((response) =>{
+    answers.title =  response.title;
+    answers.description = response.description;
+    answers.instructions = response.instructions;
+    answers.guidelines = response.guidelines;
+    answers.tests = response.tests;
+    answers.license = response.license;
+    answers.github = response.github;
+    answers.email = response.email;
+    
     showResourceMenu();
     console.log('Initial: ' + response);
     // writeToFile('./README.md', generateMarkdown(response));
