@@ -94,7 +94,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   const linkBaseUrl = 'https://';
-  const licenseSection = '';
+  let licenseSection = '';
 
   if (license != '') {
     const link = renderLicenseLink(license);
@@ -104,15 +104,6 @@ function renderLicenseSection(license) {
   return licenseSection;
 }
 
-function renderScreenshot(fileName) {
-  let screenshot = '';
-
-  if (fileName != '' ) {
-    screenshot = `![${fileName}](assets/images/${fileName})`;
-  }
-
-  return screenshot;
-}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -120,47 +111,43 @@ function generateMarkdown(data) {
 
   return `# ${data.title}     ${renderLicenseBadge(data.license)}
   
-  ## Description
+## Description
   
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution Guidelines](#contributing)
-  - [Test](#tests)
-  - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Test](#tests)
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  ${data.instructions}
+${data.instructions}
 
-  ## Usage
+## Usage
 
-  ${data.usage}
+${data.usage}
 
-  ${renderScreenshot(data.screenshot)}
-
-  ## License
+## License
   
-  Distributed under the ${renderLicenseSection(data.license)}
+Distributed under the ${renderLicenseSection(data.license)}
 
-  ## Contributing
+## Contributing
 
-  ${data.guidelines}
+${data.guidelines}
  
-  ## Tests
+## Tests
 
-  ${data.tests}
+${data.tests}
 
-  ## Questions
+## Questions
 
-  Link to my github profile: [${data.github}](https://github.com/${data.github})
-
-  Here is a link to the project: [README_Generator](https://github.com/${data.github}/readme_generator)
+Link to my github profile: [${data.github}](https://github.com/${data.github})
   
-  If you have any further questions you can email me at: [${data.email}](${data.email})
+If you have any further questions you can email me at: [${data.email}](${data.email})
 `;
 }
 

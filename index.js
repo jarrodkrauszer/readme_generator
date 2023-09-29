@@ -27,11 +27,6 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Please enter the name of the screenshot file in the ./assets/images folder:',
-    name: 'screenshot',
-  },
-  {
-    type: 'input',
     message: 'Please enter contribution guidelines:',
     name: 'guidelines',
   },
@@ -64,7 +59,6 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  // console.log(fileName, data);
   fs.writeFile(fileName, data, (err) => {
     if(err) throw err;
   
@@ -77,7 +71,7 @@ function init() {
   inquirer
   .prompt(questions)
   .then((response) => {
-    writeToFile('./README.md', generateMarkdown(response));
+    writeToFile('./assets/README.md', generateMarkdown(response));
   });
 }
 
