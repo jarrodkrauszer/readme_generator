@@ -99,13 +99,13 @@ function renderLicenseSection(license) {
   return `[${license}](${linkBaseUrl}${link})`;
 }
 
-function renderScreenshot(fileName) {
+function renderScreenshot(fileNames) {
   let screenshot = '';
 
-  if (fileName != '' ) {
-    screenshot = `![${fileName}](assets/images/${fileName})`;
-  }
-
+  fileNames.forEach(fileName => {
+    screenshot += `![${fileName}](assets/images/${fileName})\n`;
+  })
+  
   return screenshot;
 }
 
@@ -133,7 +133,7 @@ function generateMarkdown(data) {
 
   ## Usage
 
-  ${renderScreenshot(data.screenshot[0])}
+  ${renderScreenshot(data.screenshots)}
 
   ## License
   

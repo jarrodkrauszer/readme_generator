@@ -2,7 +2,7 @@
   
   ## Description
   
-  This app does something
+  this app does something
 
   ## Table of Contents
 
@@ -14,13 +14,13 @@
 
   ## Installation
 
-  npm
+  install inquirer
 
   ## Usage
 
-  undefined
+  ![screenshot.png](assets/images/screenshot.png)
+![screenshot.png](assets/images/screenshot.png)
 
-  ![undefined](assets/images/undefined)
 
   ## License
   
@@ -38,5 +38,7 @@
   ## Questions
 
   Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
+
+  Here is a link to the project: [README_Generator](https://github.com/jarrodkrauszer/readme_generator)
   
   If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
