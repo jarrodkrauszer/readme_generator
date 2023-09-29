@@ -99,6 +99,16 @@ function renderLicenseSection(license) {
   return `[${license}](${linkBaseUrl}${link})`;
 }
 
+function renderScreenshot(fileName) {
+  let screenshot = '';
+
+  if (fileName != '' ) {
+    screenshot = `![${fileName}](assets/images/${fileName})`;
+  }
+
+  return screenshot;
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   renderLicenseSection(data.license)
@@ -123,7 +133,9 @@ function generateMarkdown(data) {
 
   ## Usage
 
-  
+  ${data.usage}
+
+  ${renderScreenshot(data.screenshot)}
 
   ## License
   
