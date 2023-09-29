@@ -94,16 +94,20 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   const linkBaseUrl = 'https://';
-  const link = renderLicenseLink(license);
+  const licenseSection = '';
+
+  if (license != '') {
+    const link = renderLicenseLink(license);
+    licenseSection = `[${license}](${linkBaseUrl}${link})`;
+  }
   
-  return `[${license}](${linkBaseUrl}${link})`;
+  return licenseSection;
 }
 
 function renderScreenshot(fileName) {
   let screenshot = '';
 
   if (fileName != '' ) {
-    console.log(fileName);
     screenshot = `![${fileName}](assets/images/${fileName})`;
   }
 
