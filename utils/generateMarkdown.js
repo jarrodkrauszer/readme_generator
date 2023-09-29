@@ -129,7 +129,7 @@ function generateMarkdown(data) {
 
   ## License
   
-  This app is covered by the ${renderLicenseSection(data.license)}
+  Distributed under the ${renderLicenseSection(data.license)}
 
   ## Contributing
 
