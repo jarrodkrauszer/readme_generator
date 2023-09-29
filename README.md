@@ -1,8 +1,8 @@
-# README File     ![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+# README Generator     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Description
   
-  description
+  This app does something
 
   ## Table of Contents
 
@@ -14,21 +14,21 @@
 
   ## Installation
 
-  npm install
+  install inquirer
 
   ## Usage
 
-  some usage info
+  
 
   ![screenshot.png](assets/images/screenshot.png)
 
   ## License
   
-  Distributed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
+  Distributed under the [MIT License](https://opensource.org/licenses/MIT)
 
   ## Contributing
 
-  no guidelines
+  none
  
   ## Tests
 
