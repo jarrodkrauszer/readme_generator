@@ -3,9 +3,22 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-const resourceLinks = [];
-const screenshotPaths = [];
-// const myData = [];
+// let resourceLinks = [];
+// let screenshotPaths = [];
+
+let answers = {
+  title: '',
+  description: '',
+  instructions: '',
+  guidelines: '',
+  tests: '',
+  licesne: '',
+  github: '',
+  email: ''
+  screenshots: [],
+  resourceLinks: []
+}
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -68,7 +81,7 @@ function addScreenshotLink() {
     name: 'link',
     message: 'Please enter the path to your screenshot file.'
   }).then(response => {
-    screenshotPaths.push(response.link);
+    answers.screenshots.push(response.link);
     showScreenshotMenu();
   })
 }
@@ -93,7 +106,7 @@ function addResourceLink() {
     name: 'link',
     message: 'Please type your resource link.'
   }).then(response => {
-    resourceLinks.push(response.link);
+    answers.resourceLinks.push(response.link);
     showResourceMenu();
   })
 }
