@@ -2,7 +2,7 @@
   
   ## Description
   
-  Description
+  description
 
   ## Table of Contents
 
@@ -14,21 +14,21 @@
 
   ## Installation
 
-  npm
+  npm install
 
   ## Usage
 
-  all sorts
+  some usage info
 
   ![screenshot.png](assets/images/screenshot.png)
 
   ## License
   
-  This app is covered by the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
+  Distributed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
 
-  some guidelines
+  no guidelines
  
   ## Tests
 
@@ -36,6 +36,8 @@
 
   ## Questions
 
-  Link to my github profile: [](https://github.com/)
+  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
+
+  Here is a link to the project: [README_Generator](https://github.com/jarrodkrauszer/readme_generator)
   
-  If you have any further questions you can email me at: []()
+  If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)

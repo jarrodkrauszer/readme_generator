@@ -142,6 +142,8 @@ function generateMarkdown(data) {
   ## Questions
 
   Link to my github profile: [${data.github}](https://github.com/${data.github})
+
+  Here is a link to the project: [README_Generator](https://github.com/${data.github}/readme_generator)
   
   If you have any further questions you can email me at: [${data.email}](${data.email})
 `;
