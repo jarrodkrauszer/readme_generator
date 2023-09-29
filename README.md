@@ -1,44 +1,42 @@
 # README Generator     ![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
-  ## Description
+## Description
   
-  this app does something
+This app does something
 
-  ## Table of Contents
+## Table of Contents
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution Guidelines](#contributing)
-  - [Test](#tests)
-  - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution Guidelines](#contributing)
+- [Test](#tests)
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  install inquirer
+npm
 
-  ## Usage
+## Usage
+[www.google.com](www.google.com)
+[www.espn.com](www.espn.com)
 
-  ![screenshot.png](assets/images/screenshot.png)
-![screenshot.png](assets/images/screenshot.png)
 
 
-  ## License
+
+## License
   
-  This app is covered by the [MIT License](https://opensource.org/licenses/MIT)
+This app is covered by the [MIT License](https://opensource.org/licenses/MIT)
 
-  ## Contributing
+## Contributing
 
-  none
- 
+none
   
-  ## Tests
+## Tests
 
-  test away
+test away
 
-  ## Questions
+## Questions
 
-  Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
-
-  Here is a link to the project: [README_Generator](https://github.com/jarrodkrauszer/readme_generator)
+Link to my github profile: [jarrodkrauszer](https://github.com/jarrodkrauszer)
   
-  If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
+If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)

@@ -96,10 +96,10 @@ function renderLicenseSection(license) {
   const linkBaseUrl = 'https://';
   const link = renderLicenseLink(license);
   
-  return `[${license}](${linkBaseUrl}${link})`;
+  return `This app is covered by the [${license}](${linkBaseUrl}${link})`;
 }
 
-function renderScreenshot(fileNames) {
+function renderScreenshots(fileNames) {
   let screenshot = '';
 
   fileNames.forEach(fileName => {
@@ -109,52 +109,60 @@ function renderScreenshot(fileNames) {
   return screenshot;
 }
 
+function renderResourceLinks(links) {
+  resources = '';
+
+  links.forEach(link => {
+    resources += `[${link}](${link})\n`;
+  });
+
+  return resources;
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   renderLicenseSection(data.license)
 
   return `# ${data.title}     ${renderLicenseBadge(data.license)}
   
-  ## Description
+## Description
   
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution Guidelines](#contributing)
-  - [Test](#tests)
-  - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution Guidelines](#contributing)
+- [Test](#tests)
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  ${data.instructions}
+${data.instructions}
 
-  ## Usage
+## Usage
+${renderResourceLinks(data.resourceLinks)}
 
-  ${renderScreenshot(data.screenshots)}
+${renderScreenshots(data.screenshots)}
 
-  ## License
+## License
   
-  This app is covered by the ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
-  ## Contributing
+## Contributing
 
-  ${data.guidelines}
- 
+${data.guidelines}
   
-  ## Tests
+## Tests
 
-  ${data.tests}
+${data.tests}
 
-  ## Questions
+## Questions
 
-  Link to my github profile: [${data.github}](https://github.com/${data.github})
-
-  Here is a link to the project: [README_Generator](https://github.com/${data.github}/readme_generator)
+Link to my github profile: [${data.github}](https://github.com/${data.github})
   
-  If you have any further questions you can email me at: [${data.email}](${data.email})
+If you have any further questions you can email me at: [${data.email}](${data.email})
 `;
 }
 
