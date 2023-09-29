@@ -133,9 +133,7 @@ function generateMarkdown(data) {
 
   ## Usage
 
-  ${data.usage}
-
-  ${renderScreenshot(data.screenshot)}
+  ${renderScreenshot(data.screenshot[0])}
 
   ## License
   
