@@ -6,7 +6,7 @@ This nodejs app uses inquirer to prompt the end user a list of questions.  It us
 
 ## Installation
 
-npm i inquirer@8.4.2
+npm i inquirer@8.2.4
 
 ## Usage
 
