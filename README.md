@@ -24,4 +24,4 @@ Here is a link to the project: [README_Generator](https://github.com/jarrodkraus
   
 If you have any further questions you can email me at: [jarrod.krauszer@gmail.com](jarrod.krauszer@gmail.com)
 
-Here is a link to the demo video: [README_Generator](https://youtu.be/UZi-xTPb4hY)
+Here is a link to the demo video: [README Generator Video](https://youtu.be/UZi-xTPb4hY)
