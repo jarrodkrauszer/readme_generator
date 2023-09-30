@@ -10,6 +10,8 @@ npm i inquirer@8.4.2
 
 ## Usage
 
+To run this app you type node index.js on the command line.
+
 ![screenshot.png](assets/images/screenshot.png)
 
 ## License
